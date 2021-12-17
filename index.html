@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <link rel="icon" href="pic.jpg">
+  <meta charset='UTF-8'>
+  <title>PTFS Website - Home</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="apps.html">Applications</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="https://discord.gg/WTamTjQXag">Discord</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="main">
+      <center><h1>Welcome to the PTFS Red Arrows Website!</h1></center>
+    </div>
+    <div class="submain">
+      <center>Hey quick note if there is a problem please contact Joe Mama#6461. Thanks.</center>
+    </div>
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
